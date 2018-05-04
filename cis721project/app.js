@@ -12,5 +12,7 @@ piREST.connect();
 
 // Start server
 var server = app.listen(3000, function() {
+    console.time("Listening");
     console.log('Listening on port %d', server.address().port);
+    console.timeEnd("Executed");
 });
